@@ -11,12 +11,19 @@
       text-align: center;
       padding-top: 15%;
       background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+      margin: 0;
+      overflow-x: hidden;
     }
 
     h1 {
       font-size: 2.5em;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       text-shadow: 0 0 10px #ff4444;
+    }
+
+    .button-container {
+      position: relative;
+      display: inline-block;
     }
 
     button {
@@ -27,19 +34,44 @@
       border: 2px solid #ff4444;
       cursor: pointer;
       transition: 0.3s ease;
+      z-index: 1;
+      position: relative;
     }
 
     button:hover {
       background-color: #ff4444;
       color: #000;
     }
+
+    .planchette {
+      position: absolute;
+      width: 80px;
+      top: -100px;
+      left: -100px;
+      transform: rotate(-15deg);
+      opacity: 0.8;
+      transition: all 1s ease;
+      z-index: 0;
+    }
+
+    .button-container:hover .planchette {
+      top: -10px;
+      left: 30%;
+      transform: rotate(0deg);
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <h1>Is Brendan O'Brien talking shite again?</h1>
-  <a href="answer.html">
-    <button>Find out the answer</button>
-  </a>
+
+  <div class="button-container">
+    <img class="planchette" src="https://i.imgur.com/7nClVYp.png" alt="Planchette">
+    <a href="answer.html">
+      <button>Find out the answer</button>
+    </a>
+  </div>
+
 </body>
 </html>
