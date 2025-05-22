@@ -44,17 +44,17 @@
 
     .planchette {
       position: absolute;
-      width: 80px;
-      top: -100px;
+      width: 100px;
+      top: -120px;
       left: 50%;
-      transform: translateX(-50%) rotate(-30deg);
+      transform: translateX(-50%) rotate(-25deg);
       opacity: 0;
       transition: all 1s ease;
       z-index: 1;
     }
 
     .button-container:hover .planchette {
-      top: -20px;
+      top: -10px;
       opacity: 1;
       transform: translateX(-50%) rotate(0deg);
     }
@@ -66,7 +66,7 @@
   <h1>Is Brendan O'Brien talking shite again?</h1>
 
   <div class="button-container">
-    <img class="planchette" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ouija_planchette.svg/512px-Ouija_planchette.svg.png" alt="Planchette">
+    <img class="planchette" src="planch.png" alt="Planchette">
     <a href="answer.html">
       <button class="ouija-button">Find out the answer</button>
     </a>
